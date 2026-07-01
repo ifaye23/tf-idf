@@ -1,0 +1,18 @@
+[project]
+name = "tf-idf"
+version = "0.1.0"
+description = "A fun project to highlight important words in a document"
+authors = [
+    {name = "ifaye",email = "idrissa.faye.a@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "textblob (>=0.20.0,<0.21.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

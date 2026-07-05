@@ -1,0 +1,48 @@
+# ruff.toml
+
+# Python version
+target-version = "py313"
+line-length = 88
+
+[lint]
+select = [
+    # Pyflakes
+    "F",
+
+    # pycodestyle
+    "E",
+    "W",
+
+    # isort
+    "I",
+
+    # flake8-bugbear
+    "B",
+
+    # pyupgrade
+    "UP",
+
+    # Naming conventions
+    "N",
+
+    # Simplifications
+    "SIM",
+
+    # Return statements
+    "RET",
+
+    # Unused arguments
+    "ARG",
+
+    # Docstrings (pydocstyle)
+    "D",
+]
+
+ignore = [
+    # Allow one-line docstrings without blank line
+    "D203",
+    "D213",
+]
+
+[lint.pydocstyle]
+convention = "google"
